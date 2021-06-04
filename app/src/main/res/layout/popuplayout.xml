@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#40FFFFFF">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:ignore="MissingConstraints">
+
+        <Button
+            android:text="暂定"
+            android:id="@+id/btn_popu_one"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="30dp"
+            android:background="@drawable/btn_view_item"
+
+            app:layout_constraintBottom_toTopOf="@+id/btn_popu_back"
+            app:layout_constraintLeft_toLeftOf="parent"
+            tools:ignore="MissingConstraints" />
+
+        <Button
+            android:text="描线"
+            android:id="@+id/btn_popu_two"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/btn_view_item"
+            app:layout_constraintBottom_toTopOf="@+id/btn_popu_back"
+            app:layout_constraintLeft_toRightOf="@+id/btn_popu_one"
+            app:layout_constraintRight_toLeftOf="@+id/btn_popu_three"
+            tools:ignore="MissingConstraints" />
+
+        <Button
+            android:text="暂定"
+            android:id="@+id/btn_popu_three"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/btn_view_item"
+            app:layout_constraintBottom_toTopOf="@+id/btn_popu_back"
+            app:layout_constraintRight_toRightOf="parent"
+            tools:ignore="MissingConstraints" />
+
+        <Button
+            android:text="返回"
+            android:id="@+id/btn_popu_back"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/btn_view_item"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            tools:ignore="MissingConstraints" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
